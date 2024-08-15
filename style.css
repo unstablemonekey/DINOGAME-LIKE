@@ -1,0 +1,159 @@
+body{
+    display: flex;
+    justify-content: center;
+}
+
+#gamewindow{
+    position: relative;
+    display: flex;
+
+    margin-top: 80px;
+
+    width: 700px;
+    height: 500px;
+    background-color: rgb(121, 131, 248);
+
+    border: 5px solid;
+    border-color: black;
+    border-radius: 15px;
+}
+
+#player{
+    position: absolute;
+    top: 395px;
+    left: 100px;
+    
+    width: 50px;
+    height: 50px;
+
+    background-color: blue;
+
+    border: 5px solid;
+    border-color: black;
+    border-radius: 15px;
+}
+
+#ground{
+    position: absolute;
+    top: 450px;
+    left: 0px;
+    
+    width: 700px;
+    height: 45px;
+
+    background-color: greenyellow;
+
+    border-top: 5px solid;
+    border-color: black;
+    border-bottom-left-radius: 10px;border-bottom-right-radius: 10px;
+}
+
+#obstacle{
+    position: absolute;
+    
+    width: 50px;
+    height: 50px;
+
+    background-color: rgb(255, 0, 0);
+
+    border: 5px solid;
+    border-color: black;
+    border-radius: 15px;
+}
+
+#retry-btn{
+    position: absolute;
+    align-self: center;
+    left: 230px;
+    
+    height: 50px;
+    width: 200px;
+
+    border: solid 5px black;
+    border-radius: 15px;
+
+    box-shadow: black 5px 5px;
+
+    background-color: rgb(53, 69, 253);
+
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+
+    user-select: none;
+    outline: none;
+
+
+    transition: 0.5s;
+}
+
+
+#retry-btn:hover{
+    background-color: rgb(75, 83, 169);
+}
+
+#retry-btn:active{
+    box-shadow: black 1px 1px;
+}
+
+#score{
+
+    position: absolute;
+    right: 0px;
+
+    font-size: 25px;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+
+    padding: 25px;
+
+    user-select: none;
+
+}
+
+@keyframes example {
+    0%{
+
+        top: 240px;;
+
+    }
+    25%{
+
+        top: 245px;
+
+    }
+    50%{
+
+        top: 240px;
+
+    }
+    75%{
+
+        top: 235px;
+
+    }
+    100%{
+
+        top: 240px;
+
+    }
+
+}
+
+
+
+#title-txt{
+    position: absolute;
+    top: 240px;
+    left: 180px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    font-weight: bolder;
+
+    animation-name: example;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+
+    user-select: none;
+}
